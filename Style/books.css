@@ -1,0 +1,12 @@
+body{
+ 
+  background: linear-gradient(135deg, #71b7e6, white);
+}
+.container .row .col-6 .card{
+    border:5px solid white;
+    justify-content: center;
+    align-content: center;
+    background-color: skyblue;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

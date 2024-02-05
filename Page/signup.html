@@ -6,36 +6,48 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../style.css">
+    
+    <link rel="stylesheet" href="./Style/about-us.css"> -->
+    
+   
     <link rel="stylesheet" href="../Style/signup.css">
    
     <div class="container">
         <div class="title">Registration</div>
         <div class="content">
-            <form action="#">
+            <form action="login.html">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input  id="name" name="name" type="text" placeholder="Enter your name" required>
+                        <span id="err"></span>
                     </div>
                     <div class="input-box">
                         <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required>
+                        <input id="username" name="username" type="text" placeholder="Enter your username" required>
+                        <span id="err1"></span>
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input id="email" name="email" type="text" placeholder="Enter your email" required>
+                        <span id="err2"></span>
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required>
+                        <input id="phone" name="phone" type="text" placeholder="Enter your number" required>
+                        <span id="err3"></span>
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required>
+                        <input id="pass" name="password" type="password" placeholder="Enter your password" required>
+                        <span id="err4"></span>
                     </div>
                     <div class="input-box">
                         <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required>
+                        <input id="conpass" name="conpass" type="password" placeholder="Confirm your password" required>
+                        <span id="err5"></span>
                     </div>
                 </div>
                 <div class="gender-details">
@@ -59,10 +71,11 @@
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Register">
+                    <input onclick="return validate()" type="submit" value="Register">
                 </div>
             </form>
         </div>
     </div>
+    <script src="../Script/signup.js"></script>
 </body>
 </html>
